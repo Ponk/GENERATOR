@@ -10,22 +10,22 @@ namespace WCFDecrypt.CM
 {
     public class CM_Decryptage
     {
-        private string resultPdf;
-        private string resultFichier;
+        private bool result;
 
 
-        public string CM_generatePdf(string fichier, string cle, string confiance, string mail)
+        public bool CM_generatePdf(string titre)
         {
-            
 
-            string cheminFichier = "C:\\pdf_fichiers\\"+ fichier +".pdf";
+
+
+            string cheminFichier = "C:\\Pdftest.pdf";
             int i = 0;
 
             while (File.Exists(cheminFichier))
             {
                 i++;
 
-                cheminFichier = "C:\\pdf_fichiers\\" + fichier + "(" + i + ").pdf";
+                cheminFichier = "C:\\Pdftest" + i + ".pdf";
 
 
 
@@ -38,54 +38,17 @@ namespace WCFDecrypt.CM
             PdfWriter writer = PdfWriter.GetInstance(document, fs);
 
             document.AddAuthor("Groupe 1 eXia");
-            document.AddTitle(fichier);
+            document.AddTitle(titre);
 
             document.Open();
-            document.Add(new Paragraph("Le fichier est : " + fichier + "."));
-            document.Add(new Paragraph("La clé utilisée est : " + cle + "."));
-            document.Add(new Paragraph("Le taux de confiance est de : " + confiance + " %."));
-            document.Add(new Paragraph("Le mail trouvé est (si mail il y a dans le document) : " + mail + "."));
-            
+            document.Add(new Paragraph("Hello fdfs!"));
             document.Close();
             writer.Close();
             fs.Close();
 
-            this.resultPdf = "Le PDF a bien été généré";
+            this.result = true;
 
-            return this.resultPdf;
-
-
-        }
-
-        public string CM_generateFichierDecrypt(string fichier, string texte)
-        {
-
-
-            string cheminFichier = "C:\\pdf_fichiers\\" + fichier + ".txt";
-            int i = 0;
-
-            while (File.Exists(cheminFichier))
-            {
-                i++;
-
-                cheminFichier = "C:\\pdf_fichiers\\" + fichier + "(" + i + ").txt";
-
-
-
-            }
-
-            
-            System.IO.StreamWriter file = new System.IO.StreamWriter(cheminFichier);
-            
-            
-            file.WriteLine(texte);
-
-
-            file.Close();
-
-            this.resultFichier = "Le fichier décrypté a été créé";
-
-            return this.resultFichier;
+            return this.result;
 
 
         }

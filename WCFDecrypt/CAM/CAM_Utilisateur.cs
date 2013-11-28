@@ -31,7 +31,7 @@ namespace WCFDecrypt.CAM
             string text = DateTime.Now + " : Connexion de l'utilisateur.";
 
             // Write the string to a file.
-            File.AppendAllText("c:\\journalisation\\log.txt", text + "\r\n");
+            File.AppendAllText("c:\\test.txt", text + "\r\n");
 
             return this.oDS;
 
@@ -45,7 +45,7 @@ namespace WCFDecrypt.CAM
             string text = DateTime.Now + " : Envoi d'un e-mail.";
 
             // Write the string to a file.
-            File.AppendAllText("c:\\journalisation\\log.txt", text + "\r\n");
+            File.AppendAllText("c:\\test.txt", text + "\r\n");
 
             return this.result;
         }

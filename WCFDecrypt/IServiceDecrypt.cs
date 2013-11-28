@@ -27,9 +27,6 @@ namespace WCFDecrypt
         bool envoiMail(String adressMailReceiver, string subject, string body);
 
         [OperationContract]
-        string generatePdf(string fichier, string cle, string confiance, string mail);
-
-        [OperationContract]
-        string generateFichierDecrypt(string fichier, string texte);
+        bool generatePdf(string titre);
     }
 }

@@ -7,3 +7,8 @@ C:\Users\Valentin\Documents\GitHub\GENERATOR\WCFCommunication\bin\WCFCommunicati
 C:\Users\Valentin\Documents\GitHub\GENERATOR\WCFCommunication\bin\WCFCommunication.pdb
 C:\Users\Valentin\Documents\GitHub\GENERATOR\WCFCommunication\obj\Debug\WCFCommunication.dll
 C:\Users\Valentin\Documents\GitHub\GENERATOR\WCFCommunication\obj\Debug\WCFCommunication.pdb
+C:\Users\Hubiquitos\Documents\GitHub\GENERATOR\WCFCommunication\bin\WCFCommunication.dll
+C:\Users\Hubiquitos\Documents\GitHub\GENERATOR\WCFCommunication\bin\WCFCommunication.pdb
+C:\Users\Hubiquitos\Documents\GitHub\GENERATOR\WCFCommunication\obj\Debug\WCFCommunication.dll
+C:\Users\Hubiquitos\Documents\GitHub\GENERATOR\WCFCommunication\obj\Debug\WCFCommunication.pdb
+C:\Users\Hubiquitos\Documents\GitHub\GENERATOR\WCFCommunication\obj\Debug\WCFCommunication.csprojResolveAssemblyReference.cache

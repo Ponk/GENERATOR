@@ -10,8 +10,7 @@ namespace WCFDecrypt.CAM
     {
 
         private WCFDecrypt.CW.CW_Decryptage oDecrypt;
-        private string resultPdf;
-        private string resultFichier;
+        private bool result;
 
         public CAM_Decryptage()
         {
@@ -21,39 +20,22 @@ namespace WCFDecrypt.CAM
 
         }
 
-        public string CAM_generatePdf(string fichier, string cle, string confiance, string mail)
+        public bool CAM_generatePdf(string titre)
         {
-            this.resultPdf = this.oDecrypt.CW_generatePdf(fichier, cle, confiance, mail);
+            this.result = this.oDecrypt.CW_generatePdf(titre);
 
             // Compose a string that consists of three lines.
-            string text = DateTime.Now + " : Génération d'un fichier pdf dont le nom est " + fichier + ".pdf.";
+            string text = DateTime.Now + " : Génération d'un pdf dont le titre est " + titre + ".";
 
             // Write the string to a file.
             //System.IO.StreamWriter file = new System.IO.StreamWriter("c:\\test.txt");
-            File.AppendAllText("c:\\journalisation\\log.txt", text + "\r\n");
+            File.AppendAllText("c:\\test.txt", text + "\r\n");
             
             //file.Close();
 
 
-            return this.resultPdf;
+            return this.result;
         }
-
-        public string CAM_generateFichierDecrypt(string fichier, string texte)
-        {
-            this.resultPdf = this.oDecrypt.CW_generateFichierDecrypt(fichier, texte);
-
-            // Compose a string that consists of three lines.
-            string text = DateTime.Now + " : Génération d'un fichier décrypté dont le nom est " + fichier + ".txt.";
-
-            // Write the string to a file.
-            File.AppendAllText("c:\\journalisation\\log.txt", text + "\r\n");
-
-            //file.Close();
-
-
-            return this.resultPdf;
-        }
-
 
 
     }

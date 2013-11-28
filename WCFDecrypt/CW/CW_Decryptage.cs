@@ -8,8 +8,7 @@ namespace WCFDecrypt.CW
     public class CW_Decryptage
     {
         private WCFDecrypt.CM.CM_Decryptage oDecrypt;
-        private string resultPdf;
-        private string resultFichier;
+        private bool result;
 
 
         public CW_Decryptage()
@@ -18,19 +17,10 @@ namespace WCFDecrypt.CW
 
         }
 
-        public string CW_generatePdf(string fichier, string cle, string confiance, string mail)
+        public bool CW_generatePdf(string titre)
         {
-            this.resultPdf = this.oDecrypt.CM_generatePdf(fichier, cle, confiance, mail);
-            return this.resultPdf;
-
- 
-        }
-
-        public string CW_generateFichierDecrypt(string fichier, string texte)
-        {
-            this.resultFichier = this.oDecrypt.CM_generateFichierDecrypt(fichier, texte);
-            return this.resultFichier;
-
+            this.result = this.oDecrypt.CM_generatePdf(titre);
+            return this.result;
         }
 
 

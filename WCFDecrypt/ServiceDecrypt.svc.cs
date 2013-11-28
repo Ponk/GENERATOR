@@ -26,15 +26,12 @@ namespace WCFDecrypt
         private WCFDecrypt.CAM.CAM_Utilisateur oUtilisateur;
         private WCFDecrypt.CAM.CAM_Decryptage oDecrypt;
         private bool resultMail;
-        private string resultPdf;
-        private string resultFichier;
+        private bool resultPdf;
 
         public ServiceDecrypt()
         {
             this.oUtilisateur = new CAM.CAM_Utilisateur();
             this.oDecrypt = new CAM.CAM_Decryptage();
-
-
         }
 
         public System.Data.DataSet authentification(string rows, string login, string mdp)
@@ -51,19 +48,12 @@ namespace WCFDecrypt
 
         }
 
-        public string generatePdf(string fichier, string cle, string confiance, string mail)
+        public bool generatePdf(string titre)
         {
-            this.resultPdf = this.oDecrypt.CAM_generatePdf(fichier, cle, confiance, mail);
+            this.resultPdf = this.oDecrypt.CAM_generatePdf(titre);
             return this.resultPdf;
 
         }
-
-        public string generateFichierDecrypt(string fichier, string texte)
-        {
-            this.resultFichier = this.oDecrypt.CAM_generateFichierDecrypt(fichier, texte);
-            return this.resultFichier;
-        }
-
 
         public string[] EncryptDecrypt(string name, string content)
         {
@@ -72,9 +62,10 @@ namespace WCFDecrypt
             string[] result = new string[5];
             string cleanString = "";
 
-            for (int key = int.Parse("1299"); key > int.Parse("1296"); key--)
-            {
+            //for (int key = int.Parse("1298"); key > int.Parse("1296"); key--)
+            //{
                 //Application d'une clé
+            string key = "vbH17";
                 cleanString = this.ApplyKey(content, key.ToString());
 
                 if (isTextValid(cleanString))
@@ -101,7 +92,7 @@ namespace WCFDecrypt
                     clientCom.Reset();
                     return result;
                 }
-            }
+            //}
             return null;
         }
 
