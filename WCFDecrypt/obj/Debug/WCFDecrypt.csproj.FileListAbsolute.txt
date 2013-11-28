@@ -1,0 +1,6 @@
+C:\Users\Hubiquitos\Desktop\ProjetGENERATOR\WCFDecrypt\obj\Debug\WCFDecrypt.csprojResolveAssemblyReference.cache
+C:\Users\Hubiquitos\Desktop\ProjetGENERATOR\WCFDecrypt\bin\WCFDecrypt.dll
+C:\Users\Hubiquitos\Desktop\ProjetGENERATOR\WCFDecrypt\bin\WCFDecrypt.pdb
+C:\Users\Hubiquitos\Desktop\ProjetGENERATOR\WCFDecrypt\bin\itextsharp.dll
+C:\Users\Hubiquitos\Desktop\ProjetGENERATOR\WCFDecrypt\obj\Debug\WCFDecrypt.dll
+C:\Users\Hubiquitos\Desktop\ProjetGENERATOR\WCFDecrypt\obj\Debug\WCFDecrypt.pdb

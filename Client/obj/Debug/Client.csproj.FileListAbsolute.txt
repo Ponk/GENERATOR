@@ -1,0 +1,9 @@
+C:\Users\Hubiquitos\Desktop\ProjetGENERATOR\Client\obj\Debug\MainWindow.baml
+C:\Users\Hubiquitos\Desktop\ProjetGENERATOR\Client\obj\Debug\MainWindow.g.cs
+C:\Users\Hubiquitos\Desktop\ProjetGENERATOR\Client\obj\Debug\App.g.cs
+C:\Users\Hubiquitos\Desktop\ProjetGENERATOR\Client\obj\Debug\Client_MarkupCompile.cache
+C:\Users\Hubiquitos\Desktop\ProjetGENERATOR\Client\obj\Debug\Client.g.resources
+C:\Users\Hubiquitos\Desktop\ProjetGENERATOR\Client\obj\Debug\Client.Properties.Resources.resources
+C:\Users\Hubiquitos\Desktop\ProjetGENERATOR\Client\obj\Debug\Client.csproj.GenerateResource.Cache
+C:\Users\Hubiquitos\Desktop\ProjetGENERATOR\Client\obj\Debug\Login.baml
+C:\Users\Hubiquitos\Desktop\ProjetGENERATOR\Client\obj\Debug\Login.g.cs

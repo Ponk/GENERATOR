@@ -1,0 +1,59 @@
+﻿<Window x:Class="Client.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Generator" Height="480" Width="640" Foreground="White" ResizeMode="CanResize">
+    <Grid Background="White">
+
+        <StackPanel Orientation="Vertical">
+            <Grid HorizontalAlignment="Left">
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Choisir le(s) fichier(s) à décrypter :" />
+                    <Button Content="Parcourir..." HorizontalAlignment="Left" Width="83" Click="btn_parcourir_Click" Height="27"/>
+                </StackPanel>
+            </Grid>
+
+            <DockPanel>
+                <StackPanel DockPanel.Dock="Left">
+                    <ListView x:Name="lst_files" ItemsSource="{Binding docList}">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn Width="100" Header="Document" DisplayMemberBinding="{Binding Name}" />
+                                <GridViewColumn Width="100" Header="Statut" DisplayMemberBinding="{Binding Status}" />
+                            </GridView>
+                        </ListView.View>
+
+                    </ListView>
+                    <Grid>
+                        <Button x:Name="btn_envoyer" Visibility="{Binding BtnEnvoyerVisibility}" Content="Envoyer" Click="btn_envoyer_click" />
+                        <ProgressBar x:Name="progressBar" Visibility="{Binding ProgressBarVisibility}" IsIndeterminate="True"/>
+                    </Grid>
+
+                    <StackPanel Orientation="Horizontal">
+                        <Label Foreground="Black" Content="Document : " />
+                        <TextBlock x:Name="tb_resultName" DockPanel.Dock="Right" TextWrapping="Wrap" Foreground="Black" Text="{Binding TextResultName}" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Foreground="Black" Content="Clé de décryptage : " />
+                        <TextBlock x:Name="tb_resultKey" DockPanel.Dock="Right" TextWrapping="Wrap" Foreground="Black" Text="{Binding TextResultKey}" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Foreground="Black" Content="Email : " />
+                        <TextBlock x:Name="tb_resultMail" DockPanel.Dock="Right" TextWrapping="Wrap" Foreground="Black" Text="{Binding TextResultMail}" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Foreground="Black" Content="Taux de confiance : " />
+                        <TextBlock x:Name="tb_resultTaux" DockPanel.Dock="Right" TextWrapping="Wrap" Foreground="Black" Text="{Binding TextResultTaux}" />
+                    </StackPanel>
+                </StackPanel>
+
+                <StackPanel>
+                    <ScrollViewer VerticalScrollBarVisibility="Visible">
+                        <TextBlock x:Name="tb_resultContent" Height="400" DockPanel.Dock="Right" TextWrapping="Wrap" Foreground="Black" Text="{Binding TextResultContent}" />
+                    </ScrollViewer>
+                </StackPanel>
+            </DockPanel>
+
+        </StackPanel>
+
+    </Grid>
+</Window>

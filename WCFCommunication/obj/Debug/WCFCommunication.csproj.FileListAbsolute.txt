@@ -1,0 +1,5 @@
+C:\Users\Hubiquitos\Desktop\ProjetGENERATOR\WCFCommunication\bin\WCFCommunication.dll
+C:\Users\Hubiquitos\Desktop\ProjetGENERATOR\WCFCommunication\bin\WCFCommunication.pdb
+C:\Users\Hubiquitos\Desktop\ProjetGENERATOR\WCFCommunication\obj\Debug\WCFCommunication.csprojResolveAssemblyReference.cache
+C:\Users\Hubiquitos\Desktop\ProjetGENERATOR\WCFCommunication\obj\Debug\WCFCommunication.dll
+C:\Users\Hubiquitos\Desktop\ProjetGENERATOR\WCFCommunication\obj\Debug\WCFCommunication.pdb

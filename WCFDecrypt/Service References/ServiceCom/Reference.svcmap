@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="e31f3786-76fb-4eae-83a4-48ccd7c91bba" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:46969/ServiceCom.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ServiceCom.xsd" MetadataType="Schema" ID="d80dc095-2b7b-4e73-bf11-f9788d3b1de6" SourceId="1" SourceUrl="http://localhost:46969/ServiceCom.svc?xsd=xsd0" />
+    <MetadataFile FileName="ServiceCom.wsdl" MetadataType="Wsdl" ID="10afac8c-82f6-4bea-80b9-d61511e4ace1" SourceId="1" SourceUrl="http://localhost:46969/ServiceCom.svc?wsdl" />
+    <MetadataFile FileName="ServiceCom.disco" MetadataType="Disco" ID="87f16d05-a049-4978-9fb4-cce66c947c19" SourceId="1" SourceUrl="http://localhost:46969/ServiceCom.svc?disco" />
+    <MetadataFile FileName="ServiceCom1.xsd" MetadataType="Schema" ID="6e64ef78-2e72-484d-bbf3-20014e50d7c2" SourceId="1" SourceUrl="http://localhost:46969/ServiceCom.svc?xsd=xsd2" />
+    <MetadataFile FileName="ServiceCom2.xsd" MetadataType="Schema" ID="f11490a7-ea5d-4848-bb94-8e865ac66006" SourceId="1" SourceUrl="http://localhost:46969/ServiceCom.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
