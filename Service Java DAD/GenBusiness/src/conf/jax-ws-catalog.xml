@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:4167/ServiceCom.svc" uri="wsdl/localhost_4167/ServiceCom.svc.xml"/>
+    <system systemId="http://localhost:4167/ServiceCom.svc?wsdl" uri="wsdl/localhost_4167/ServiceCom.svc.wsdl"/>
+    <system systemId="http://localhost:4167/ServiceCom.svc?xsd=xsd0" uri="wsdl/localhost_4167/ServiceCom.svc.xsd_xsd0.xsd"/>
+    <system systemId="http://localhost:4167/ServiceCom.svc?xsd=xsd1" uri="wsdl/localhost_4167/ServiceCom.svc.xsd_xsd1.xsd"/>
+    <system systemId="http://localhost:4167/ServiceCom.svc?xsd=xsd2" uri="wsdl/localhost_4167/ServiceCom.svc.xsd_xsd2.xsd"/>
+    <system systemId="http://localhost:46969/ServiceCom.svc?wsdl" uri="wsdl/localhost_46969/ServiceCom.svc.wsdl"/>
+    <system systemId="http://localhost:46969/ServiceCom.svc?xsd=xsd0" uri="wsdl/localhost_46969/ServiceCom.svc.xsd_xsd0.xsd"/>
+    <system systemId="http://localhost:46969/ServiceCom.svc?xsd=xsd1" uri="wsdl/localhost_46969/ServiceCom.svc.xsd_xsd1.xsd"/>
+    <system systemId="http://localhost:46969/ServiceCom.svc?xsd=xsd2" uri="wsdl/localhost_46969/ServiceCom.svc.xsd_xsd2.xsd"/>
+</catalog>
