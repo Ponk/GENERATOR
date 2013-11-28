@@ -21,7 +21,8 @@ namespace Client
     {
         private System.Data.DataSet oDS;
         private WCFDecrypt.ServiceDecryptClient oClient;
-        private bool result;
+        private string resultPdf;
+        private string resultFichier;
         public string token_app = "rouen76";
         public string tokenUtilisateur;
 
@@ -82,9 +83,25 @@ namespace Client
 
             }
 
-            /*result = oClient.generatePdf("Titre test");
+            string mail = "mail.test@gmail.com";
 
-            MessageBoxResult m5 = MessageBox.Show(result.ToString());*/
+            if (mail == null)
+            {
+                mail = "Pas de mail trouvé";
+            }
+            else
+            {
+                mail = "mail.test@gmail.com";
+            }
+
+            resultPdf = oClient.generatePdf("f1", "1298", "100", mail);
+
+            MessageBoxResult m5 = MessageBox.Show(resultPdf);
+
+            resultFichier = oClient.generateFichierDecrypt("f1", "blalblalbdfls");
+
+            MessageBoxResult m87 = MessageBox.Show(resultFichier);
+
 
             //string mail = connexion.sendMail();
         }

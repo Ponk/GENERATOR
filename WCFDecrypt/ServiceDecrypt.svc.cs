@@ -26,7 +26,8 @@ namespace WCFDecrypt
         private WCFDecrypt.CAM.CAM_Utilisateur oUtilisateur;
         private WCFDecrypt.CAM.CAM_Decryptage oDecrypt;
         private bool resultMail;
-        private bool resultPdf;
+        private string resultPdf;
+        private string resultFichier;
 
         public ServiceDecrypt()
         {
@@ -50,11 +51,17 @@ namespace WCFDecrypt
 
         }
 
-        public bool generatePdf(string titre)
+        public string generatePdf(string fichier, string cle, string confiance, string mail)
         {
-            this.resultPdf = this.oDecrypt.CAM_generatePdf(titre);
+            this.resultPdf = this.oDecrypt.CAM_generatePdf(fichier, cle, confiance, mail);
             return this.resultPdf;
 
+        }
+
+        public string generateFichierDecrypt(string fichier, string texte)
+        {
+            this.resultFichier = this.oDecrypt.CAM_generateFichierDecrypt(fichier, texte);
+            return this.resultFichier;
         }
 
 

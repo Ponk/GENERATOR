@@ -32,6 +32,12 @@
   <wsdl:message name="IServiceDecrypt_generatePdf_OutputMessage">
     <wsdl:part name="parameters" element="tns:generatePdfResponse" />
   </wsdl:message>
+  <wsdl:message name="IServiceDecrypt_generateFichierDecrypt_InputMessage">
+    <wsdl:part name="parameters" element="tns:generateFichierDecrypt" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDecrypt_generateFichierDecrypt_OutputMessage">
+    <wsdl:part name="parameters" element="tns:generateFichierDecryptResponse" />
+  </wsdl:message>
   <wsdl:portType name="IServiceDecrypt">
     <wsdl:operation name="EncryptDecrypt">
       <wsdl:input wsaw:Action="http://tempuri.org/IServiceDecrypt/EncryptDecrypt" message="tns:IServiceDecrypt_EncryptDecrypt_InputMessage" />
@@ -48,6 +54,10 @@
     <wsdl:operation name="generatePdf">
       <wsdl:input wsaw:Action="http://tempuri.org/IServiceDecrypt/generatePdf" message="tns:IServiceDecrypt_generatePdf_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IServiceDecrypt/generatePdfResponse" message="tns:IServiceDecrypt_generatePdf_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="generateFichierDecrypt">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceDecrypt/generateFichierDecrypt" message="tns:IServiceDecrypt_generateFichierDecrypt_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceDecrypt/generateFichierDecryptResponse" message="tns:IServiceDecrypt_generateFichierDecrypt_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IServiceDecrypt" type="tns:IServiceDecrypt">
@@ -81,6 +91,15 @@
     </wsdl:operation>
     <wsdl:operation name="generatePdf">
       <soap:operation soapAction="http://tempuri.org/IServiceDecrypt/generatePdf" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="generateFichierDecrypt">
+      <soap:operation soapAction="http://tempuri.org/IServiceDecrypt/generateFichierDecrypt" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

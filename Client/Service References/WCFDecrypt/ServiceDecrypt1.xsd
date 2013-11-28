@@ -63,14 +63,32 @@
   <xs:element name="generatePdf">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="titre" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="fichier" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="cle" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="confiance" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mail" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
   <xs:element name="generatePdfResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="generatePdfResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="generatePdfResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="generateFichierDecrypt">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="fichier" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="texte" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="generateFichierDecryptResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="generateFichierDecryptResult" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

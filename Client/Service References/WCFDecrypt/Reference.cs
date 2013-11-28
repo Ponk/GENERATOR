@@ -34,10 +34,16 @@ namespace Client.WCFDecrypt {
         System.Threading.Tasks.Task<bool> envoiMailAsync(string adressMailReceiver, string subject, string body);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceDecrypt/generatePdf", ReplyAction="http://tempuri.org/IServiceDecrypt/generatePdfResponse")]
-        bool generatePdf(string titre);
+        string generatePdf(string fichier, string cle, string confiance, string mail);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceDecrypt/generatePdf", ReplyAction="http://tempuri.org/IServiceDecrypt/generatePdfResponse")]
-        System.Threading.Tasks.Task<bool> generatePdfAsync(string titre);
+        System.Threading.Tasks.Task<string> generatePdfAsync(string fichier, string cle, string confiance, string mail);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceDecrypt/generateFichierDecrypt", ReplyAction="http://tempuri.org/IServiceDecrypt/generateFichierDecryptResponse")]
+        string generateFichierDecrypt(string fichier, string texte);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceDecrypt/generateFichierDecrypt", ReplyAction="http://tempuri.org/IServiceDecrypt/generateFichierDecryptResponse")]
+        System.Threading.Tasks.Task<string> generateFichierDecryptAsync(string fichier, string texte);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -91,12 +97,20 @@ namespace Client.WCFDecrypt {
             return base.Channel.envoiMailAsync(adressMailReceiver, subject, body);
         }
         
-        public bool generatePdf(string titre) {
-            return base.Channel.generatePdf(titre);
+        public string generatePdf(string fichier, string cle, string confiance, string mail) {
+            return base.Channel.generatePdf(fichier, cle, confiance, mail);
         }
         
-        public System.Threading.Tasks.Task<bool> generatePdfAsync(string titre) {
-            return base.Channel.generatePdfAsync(titre);
+        public System.Threading.Tasks.Task<string> generatePdfAsync(string fichier, string cle, string confiance, string mail) {
+            return base.Channel.generatePdfAsync(fichier, cle, confiance, mail);
+        }
+        
+        public string generateFichierDecrypt(string fichier, string texte) {
+            return base.Channel.generateFichierDecrypt(fichier, texte);
+        }
+        
+        public System.Threading.Tasks.Task<string> generateFichierDecryptAsync(string fichier, string texte) {
+            return base.Channel.generateFichierDecryptAsync(fichier, texte);
         }
     }
 }
