@@ -19,5 +19,14 @@ namespace WCFDecrypt
     {
         [OperationContract]
         string[] EncryptDecrypt(string name, string content);
+
+        [OperationContract]
+        System.Data.DataSet authentification(string rows, string login, string mdp);
+
+        [OperationContract]
+        bool envoiMail(String adressMailReceiver, string subject, string body);
+
+        [OperationContract]
+        bool generatePdf(string titre);
     }
 }

@@ -4,3 +4,7 @@ C:\Users\Hubiquitos\Desktop\ProjetGENERATOR\WCFDecrypt\bin\WCFDecrypt.pdb
 C:\Users\Hubiquitos\Desktop\ProjetGENERATOR\WCFDecrypt\bin\itextsharp.dll
 C:\Users\Hubiquitos\Desktop\ProjetGENERATOR\WCFDecrypt\obj\Debug\WCFDecrypt.dll
 C:\Users\Hubiquitos\Desktop\ProjetGENERATOR\WCFDecrypt\obj\Debug\WCFDecrypt.pdb
+C:\Users\Valentin\Documents\GitHub\GENERATOR\WCFDecrypt\bin\WCFDecrypt.dll
+C:\Users\Valentin\Documents\GitHub\GENERATOR\WCFDecrypt\bin\WCFDecrypt.pdb
+C:\Users\Valentin\Documents\GitHub\GENERATOR\WCFDecrypt\obj\Debug\WCFDecrypt.dll
+C:\Users\Valentin\Documents\GitHub\GENERATOR\WCFDecrypt\obj\Debug\WCFDecrypt.pdb

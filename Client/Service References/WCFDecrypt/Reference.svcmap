@@ -22,11 +22,12 @@
     <MetadataSource Address="http://localhost:46637/ServiceDecrypt.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="ServiceDecrypt.xsd" MetadataType="Schema" ID="784fddb5-9bb6-4a42-8b77-c5efd7640339" SourceId="1" SourceUrl="http://localhost:46637/ServiceDecrypt.svc?xsd=xsd1" />
     <MetadataFile FileName="ServiceDecrypt.wsdl" MetadataType="Wsdl" ID="411ec542-f0fa-418a-a197-a6b051995928" SourceId="1" SourceUrl="http://localhost:46637/ServiceDecrypt.svc?wsdl" />
-    <MetadataFile FileName="ServiceDecrypt1.xsd" MetadataType="Schema" ID="7db4bb87-1dc8-4f11-96ef-203bc5054867" SourceId="1" SourceUrl="http://localhost:46637/ServiceDecrypt.svc?xsd=xsd0" />
     <MetadataFile FileName="ServiceDecrypt.disco" MetadataType="Disco" ID="74e2d4e9-8792-4199-8b7b-859e1f3d76ed" SourceId="1" SourceUrl="http://localhost:46637/ServiceDecrypt.svc?disco" />
+    <MetadataFile FileName="ServiceDecrypt3.xsd" MetadataType="Schema" ID="4682680a-513c-46a1-8d28-1d6e6d7fb3a0" SourceId="1" SourceUrl="http://localhost:46637/ServiceDecrypt.svc?xsd=xsd3" />
     <MetadataFile FileName="ServiceDecrypt2.xsd" MetadataType="Schema" ID="05339663-5e20-4692-a745-d2a8f722e888" SourceId="1" SourceUrl="http://localhost:46637/ServiceDecrypt.svc?xsd=xsd2" />
+    <MetadataFile FileName="ServiceDecrypt.xsd" MetadataType="Schema" ID="784fddb5-9bb6-4a42-8b77-c5efd7640339" SourceId="1" SourceUrl="http://localhost:46637/ServiceDecrypt.svc?xsd=xsd1" />
+    <MetadataFile FileName="ServiceDecrypt1.xsd" MetadataType="Schema" ID="7db4bb87-1dc8-4f11-96ef-203bc5054867" SourceId="1" SourceUrl="http://localhost:46637/ServiceDecrypt.svc?xsd=xsd0" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

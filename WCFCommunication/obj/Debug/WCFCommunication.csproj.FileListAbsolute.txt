@@ -3,3 +3,7 @@ C:\Users\Hubiquitos\Desktop\ProjetGENERATOR\WCFCommunication\bin\WCFCommunicatio
 C:\Users\Hubiquitos\Desktop\ProjetGENERATOR\WCFCommunication\obj\Debug\WCFCommunication.csprojResolveAssemblyReference.cache
 C:\Users\Hubiquitos\Desktop\ProjetGENERATOR\WCFCommunication\obj\Debug\WCFCommunication.dll
 C:\Users\Hubiquitos\Desktop\ProjetGENERATOR\WCFCommunication\obj\Debug\WCFCommunication.pdb
+C:\Users\Valentin\Documents\GitHub\GENERATOR\WCFCommunication\bin\WCFCommunication.dll
+C:\Users\Valentin\Documents\GitHub\GENERATOR\WCFCommunication\bin\WCFCommunication.pdb
+C:\Users\Valentin\Documents\GitHub\GENERATOR\WCFCommunication\obj\Debug\WCFCommunication.dll
+C:\Users\Valentin\Documents\GitHub\GENERATOR\WCFCommunication\obj\Debug\WCFCommunication.pdb

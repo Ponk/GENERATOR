@@ -5,6 +5,7 @@
       <xsd:import schemaLocation="http://localhost:46637/ServiceDecrypt.svc?xsd=xsd0" namespace="http://tempuri.org/" />
       <xsd:import schemaLocation="http://localhost:46637/ServiceDecrypt.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
       <xsd:import schemaLocation="http://localhost:46637/ServiceDecrypt.svc?xsd=xsd2" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://localhost:46637/ServiceDecrypt.svc?xsd=xsd3" />
     </xsd:schema>
   </wsdl:types>
   <wsdl:message name="IServiceDecrypt_EncryptDecrypt_InputMessage">
@@ -13,16 +14,73 @@
   <wsdl:message name="IServiceDecrypt_EncryptDecrypt_OutputMessage">
     <wsdl:part name="parameters" element="tns:EncryptDecryptResponse" />
   </wsdl:message>
+  <wsdl:message name="IServiceDecrypt_authentification_InputMessage">
+    <wsdl:part name="parameters" element="tns:authentification" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDecrypt_authentification_OutputMessage">
+    <wsdl:part name="parameters" element="tns:authentificationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDecrypt_envoiMail_InputMessage">
+    <wsdl:part name="parameters" element="tns:envoiMail" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDecrypt_envoiMail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:envoiMailResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDecrypt_generatePdf_InputMessage">
+    <wsdl:part name="parameters" element="tns:generatePdf" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDecrypt_generatePdf_OutputMessage">
+    <wsdl:part name="parameters" element="tns:generatePdfResponse" />
+  </wsdl:message>
   <wsdl:portType name="IServiceDecrypt">
     <wsdl:operation name="EncryptDecrypt">
       <wsdl:input wsaw:Action="http://tempuri.org/IServiceDecrypt/EncryptDecrypt" message="tns:IServiceDecrypt_EncryptDecrypt_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IServiceDecrypt/EncryptDecryptResponse" message="tns:IServiceDecrypt_EncryptDecrypt_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="authentification">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceDecrypt/authentification" message="tns:IServiceDecrypt_authentification_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceDecrypt/authentificationResponse" message="tns:IServiceDecrypt_authentification_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="envoiMail">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceDecrypt/envoiMail" message="tns:IServiceDecrypt_envoiMail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceDecrypt/envoiMailResponse" message="tns:IServiceDecrypt_envoiMail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="generatePdf">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceDecrypt/generatePdf" message="tns:IServiceDecrypt_generatePdf_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceDecrypt/generatePdfResponse" message="tns:IServiceDecrypt_generatePdf_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IServiceDecrypt" type="tns:IServiceDecrypt">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
     <wsdl:operation name="EncryptDecrypt">
       <soap:operation soapAction="http://tempuri.org/IServiceDecrypt/EncryptDecrypt" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="authentification">
+      <soap:operation soapAction="http://tempuri.org/IServiceDecrypt/authentification" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="envoiMail">
+      <soap:operation soapAction="http://tempuri.org/IServiceDecrypt/envoiMail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="generatePdf">
+      <soap:operation soapAction="http://tempuri.org/IServiceDecrypt/generatePdf" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

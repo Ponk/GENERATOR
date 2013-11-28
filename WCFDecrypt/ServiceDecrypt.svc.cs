@@ -22,6 +22,42 @@ namespace WCFDecrypt
     public class ServiceDecrypt : IServiceDecrypt
     {
 
+        private System.Data.DataSet oDS;
+        private WCFDecrypt.CAM.CAM_Utilisateur oUtilisateur;
+        private WCFDecrypt.CAM.CAM_Decryptage oDecrypt;
+        private bool resultMail;
+        private bool resultPdf;
+
+        public ServiceDecrypt()
+        {
+            this.oUtilisateur = new CAM.CAM_Utilisateur();
+            this.oDecrypt = new CAM.CAM_Decryptage();
+
+
+        }
+
+        public System.Data.DataSet authentification(string rows, string login, string mdp)
+        {
+            this.oDS = this.oUtilisateur.CAM_selectUser(rows, login, mdp);
+            return this.oDS;
+
+        }
+
+        public bool envoiMail(String adressMailReceiver, string subject, string body)
+        {
+            this.resultMail = this.oUtilisateur.CAM_sendMail(adressMailReceiver, subject, body);
+            return this.resultMail;
+
+        }
+
+        public bool generatePdf(string titre)
+        {
+            this.resultPdf = this.oDecrypt.CAM_generatePdf(titre);
+            return this.resultPdf;
+
+        }
+
+
         public string[] EncryptDecrypt(string name, string content)
         {
             GenServiceClient client = new GenServiceClient();

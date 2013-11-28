@@ -7,3 +7,17 @@ C:\Users\Hubiquitos\Desktop\ProjetGENERATOR\Client\obj\Debug\Client.Properties.R
 C:\Users\Hubiquitos\Desktop\ProjetGENERATOR\Client\obj\Debug\Client.csproj.GenerateResource.Cache
 C:\Users\Hubiquitos\Desktop\ProjetGENERATOR\Client\obj\Debug\Login.baml
 C:\Users\Hubiquitos\Desktop\ProjetGENERATOR\Client\obj\Debug\Login.g.cs
+C:\Users\Valentin\Documents\GitHub\GENERATOR\Client\bin\Debug\Client.exe.config
+C:\Users\Valentin\Documents\GitHub\GENERATOR\Client\obj\Debug\Login.baml
+C:\Users\Valentin\Documents\GitHub\GENERATOR\Client\obj\Debug\MainWindow.baml
+C:\Users\Valentin\Documents\GitHub\GENERATOR\Client\obj\Debug\Login.g.cs
+C:\Users\Valentin\Documents\GitHub\GENERATOR\Client\obj\Debug\MainWindow.g.cs
+C:\Users\Valentin\Documents\GitHub\GENERATOR\Client\obj\Debug\App.g.cs
+C:\Users\Valentin\Documents\GitHub\GENERATOR\Client\obj\Debug\Client_MarkupCompile.cache
+C:\Users\Valentin\Documents\GitHub\GENERATOR\Client\obj\Debug\Client.g.resources
+C:\Users\Valentin\Documents\GitHub\GENERATOR\Client\obj\Debug\Client.Properties.Resources.resources
+C:\Users\Valentin\Documents\GitHub\GENERATOR\Client\obj\Debug\Client.csproj.GenerateResource.Cache
+C:\Users\Valentin\Documents\GitHub\GENERATOR\Client\bin\Debug\Client.exe
+C:\Users\Valentin\Documents\GitHub\GENERATOR\Client\bin\Debug\Client.pdb
+C:\Users\Valentin\Documents\GitHub\GENERATOR\Client\obj\Debug\Client.exe
+C:\Users\Valentin\Documents\GitHub\GENERATOR\Client\obj\Debug\Client.pdb
